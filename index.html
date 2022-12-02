@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<link rel="stylesheet" href="css/ants-life.01.css" />
+	<title>Langton&rsquo;s ant</title>
+</head>
+
+<body>
+	<div class="controls-container">
+		<div class="controls ants-controls">
+			<legend>Langtons Ants controls</legend>
+			<fieldset class="runControls">
+				<button class="stop">stop</button>
+				<button class="run">run</button>
+				<button class="clear">clear</button><br />
+				<button class="step">step</button>
+			</fieldset>
+			<fieldset class="speed">
+				<input class="speed" name="speed" type="range" min="0" max="500" value="100" /><br />
+				<label class="left" for="speed">faster</label>
+				<output for="speed" class="speed">100</output>
+				<label class="right" for="speed">slower</label>
+			</fieldset>
+			<fieldset class="size">
+				<input class="size" name="size" type="range" min="1" max="30" value="10" /><br />
+				<label class="left" for="size">smaller</label>
+				<output for="size" class="size">10</output>
+				<label class="right" for="size">larger</label>
+			</fieldset>
+			<fieldset class="stats">
+				<input id="antsCount" readonly="readonly" value="0" />
+				<label for="antsCount">ants</label>
+				<br />
+				<input id="antsteps" readonly="readonly" value="0" />
+				<label for="antsteps">steps</label>
+			</fieldset>
+			<div class="clearFix"></div>
+		</div>
+		<div class="controls life-controls">
+			<legend>Conway's Life controls</legend>
+			<fieldset class="runControls">
+				<button class="stop">stop</button>
+				<button class="step">step</button>
+				<button class="run">run</button>
+			</fieldset>
+			<fieldset class="stats">
+				<input id="lifeCount" readonly="readonly" value="0" />
+				<label for="lifeCount">life-cells</label>
+				<br />
+				<input id="lifeSteps" readonly="readonly" value="0" />
+				<label for="lifeSteps">steps</label>
+			</fieldset>
+			<div class="clearFix"></div>
+		</div>
+	</div>
+	<!--script src="http://code.jquery.com/jquery-latest.js" type="text/javascript"></script-->
+	<script src="js/jquery-1.8.2.min.js" type="text/javascript"></script>
+	<script src="js/ants-life.01.js" type="text/javascript"></script>
+</body>
+
+</html>
